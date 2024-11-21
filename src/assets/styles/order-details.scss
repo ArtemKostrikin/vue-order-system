@@ -1,0 +1,39 @@
+// Пример определения переменных, если они ещё не определены
+$primary-color: #ff4081; // Пример основного цвета
+$hover-color: #e535ab; // Пример цвета при наведении
+
+.order-details {
+    padding: 20px;
+    background-color: #f9f9f9; // Фон для контейнера (если нужно)
+
+    h1 {
+        margin-bottom: 20px; // Заголовок "Детали заказа"
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 10px; // Расстояние между абзацами
+        font-size: 16px;
+        color: #333; // Цвет текста
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+
+        &:focus {
+            outline: none; // Убираем контур при фокусе (если нужно)
+        }
+    }
+}
